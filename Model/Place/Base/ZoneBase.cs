@@ -11,11 +11,12 @@ namespace Model.Place.Base
     {
 
         protected List<T> content = new List<T>();
-        protected int Name { get; set; }
+        protected String Name { get; set; }
         protected int Capacity { get; private set; }
 
-        public ZoneBase(int maxi)
+        public ZoneBase(String name, int maxi)
         {
+            this.Name = name;
             this.Capacity = maxi;
         }
 
@@ -40,6 +41,7 @@ namespace Model.Place.Base
                 throw new Exception("Outch Animal is dead...");
             }
 
+            // Add Bidirectional relation
             this.content.Add(value);
             value.Zone = this;
         }

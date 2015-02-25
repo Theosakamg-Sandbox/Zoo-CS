@@ -16,5 +16,10 @@ namespace Model.Animal.Base
         {
             this.Name = name;
         }
+
+        public String toString()
+        {
+            return String.Format("%s (%s)", this.Name, this.GetType().Name);
+        }
     }
 }
