@@ -12,8 +12,8 @@ namespace UI_concole
     {
         static void Main(string[] args)
         {
-            Cage cage = new Cage(2);
-            Pool pool = new Pool(3);
+            Cage cage = new Cage("1", 2);
+            Pool pool = new Pool("2", 3);
 
             // Base system
             Monkey monkey = new Monkey("Donkey Kong");

@@ -10,6 +10,6 @@ namespace Model.Place
 {
     public class Cage : ZoneBase<ITerestrial>
     {
-        public Cage(int maxi) : base(maxi) { }
+        public Cage(String name, int maxi) : base(name, maxi) { }
     }
 }

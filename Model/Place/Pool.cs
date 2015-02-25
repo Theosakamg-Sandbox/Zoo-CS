@@ -10,6 +10,6 @@ namespace Model.Place
 {
     public class Pool : ZoneBase<IAquatic>
     {
-        public Pool(int maxi) : base(maxi) {  }
+        public Pool(String name, int maxi) : base(name, maxi) {  }
     }
 }
