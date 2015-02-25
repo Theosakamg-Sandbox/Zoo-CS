@@ -17,7 +17,8 @@ namespace Model.Animal.Base
             this.Name = name;
         }
 
-        public String toString()
+        override
+        public String ToString()
         {
             return String.Format("%s (%s)", this.Name, this.GetType().Name);
         }
