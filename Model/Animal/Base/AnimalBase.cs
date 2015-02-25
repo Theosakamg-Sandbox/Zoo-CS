@@ -20,7 +20,7 @@ namespace Model.Animal.Base
         override
         public String ToString()
         {
-            return String.Format("%s (%s)", this.Name, this.GetType().Name);
+            return String.Format("{0} ({1})", this.Name, this.GetType().Name);
         }
     }
 }
